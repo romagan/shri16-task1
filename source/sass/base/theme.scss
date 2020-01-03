@@ -1,0 +1,115 @@
+.theme {
+	background-color: var(--bg-color-default);
+
+	&_color {
+		&_project-default {
+			--bg-color-default: #ffffff;
+			--bg-color-accent: #ffcc00;
+			--bg-color-bordered: #000000;
+
+			--color-primary: #000000;
+			--color-secondary: rgba(0, 0, 0, 0.6);
+			--color-ghost: rgba(0, 0, 0, 0.3);
+			--color-link: #0070f0;
+
+			--image-url: url(./img/placeholder.svg);
+			--image-bg-color: var(--bg-color-default);
+			--image-border-color: var(--bg-color-bordered);
+		}
+
+		&_project-brand {
+			--bg-color-default: #0077ff;
+			--bg-color-accent: #ffffff;
+			--bg-color-bordered: #ffffff;
+
+			--color-primary: #ffffff;
+			--color-secondary: rgba(255, 255, 255, 0.6);
+			--color-ghost: rgba(255, 255, 255, 0.3);
+			--color-link: #ffffff;
+
+			--image-url: url(./img/placeholder-inverse.svg);
+			--image-bg-color: var(--bg-color-default);
+			--image-border-color: var(--bg-color-bordered);
+		}
+
+		&_project-inverse {
+			--bg-color-default: #000000;
+			--bg-color-accent: #ffffff;
+			--bg-color-bordered: #ffffff;
+
+			--color-primary: #ffffff;
+			--color-secondary: rgba(255, 255, 255, 0.6);
+			--color-ghost: rgba(255, 255, 255, 0.3);
+			--color-link: #0077ff;
+
+			--image-url: url(./img/placeholder-inverse.svg);
+			--image-bg-color: var(--bg-color-default);
+			--image-border-color: var(--bg-color-bordered);
+		}
+
+		&_project-warning {
+			--bg-color-default: #ff3333;
+			--bg-color-accent: #ffffff;
+			--bg-color-bordered: #ff3333;
+
+			--color-primary: #ffffff;
+			--color-secondary: rgba(255, 255, 255, 0.6);
+			--color-ghost: rgba(255, 255, 255, 0.3);
+			--color-link: #ffffff;
+
+			--image-url: url(./img/placeholder-inverse.svg);
+			--image-bg-color: var(--bg-color-default);
+			--image-border-color: var(--bg-color-bordered);
+		}
+	}
+
+	&_size{
+		&_default {
+			--text-height-s: 8px;
+			--text-height-m: 10px;
+			--text-height-l: 11px;
+			--text-height-xl: 13px;
+			--text-height-xxl: 16px;
+
+			--line-height-s: 21px;
+			--line-height-m: 25px;
+			--line-height-l: 28px;
+			--line-height-xl: 34px;
+			--line-height-xxl: 38px;
+		}
+	}
+
+	&_space {
+		&_default {
+			--space-xxxs: 3px;
+			--space-xxs: 6px;
+			--space-xs: 9px;
+			--space-s: 15px;
+			--space-m: 18px;
+			--space-l: 24px;
+			--space-xl: 27px;
+			--space-xxl: 36px;
+			--space-xxxl: 45px;
+			--space-xxxxl: 51px;
+			--space-xxxxxl: 72px;
+		}
+	}
+
+	--header-footer-padding: 0;
+
+	&_gap {
+		&_small {
+			--gap: var(--space-xl);
+		}
+	}
+
+	@media screen and (max-width: $breakpoint) {
+		--header-footer-padding: var(--gap);
+
+		&_gap {
+			&_small {
+				--gap: var(--space-m);
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.header {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: var(--space-xxxl) var(--header-footer-padding);
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		width: 179px;
+		height: 34px;
+		background-color: var(--color-primary);
+	}
+}

@@ -1,0 +1,82 @@
+.grid {
+	display: grid;
+
+	&_m-columns {
+		&_10 {
+			grid-template-columns: repeat(10, 1fr);
+		}
+
+		&_12 {
+			grid-template-columns: repeat(12, 1fr);
+		}
+	}
+
+	@media screen and (max-width: $breakpoint) {
+		&_m-columns {
+			&_10,
+			&_12 {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+
+	&_col-gap {
+		&_full {
+			column-gap: var(--gap);
+		}
+
+		&_two-thirds {
+			column-gap: calc(var(--gap) * (2 / 3));
+		}
+
+		&_half {
+			column-gap: calc(var(--gap) / 2);
+		}
+	}
+
+	&_row-gap {
+		&_full {
+			row-gap: var(--gap);
+		}
+
+		&_half {
+			row-gap: calc(var(--gap) / 2);
+		}
+	}
+}
+
+.grid__fraction {
+	&_m-col {
+		&_2 {
+			grid-column: span 2;
+		}
+
+		&_3 {
+			grid-column: span 3;
+		}
+	
+		&_4 {
+			grid-column: span 4;
+		}
+	
+		&_5 {
+			grid-column: span 5;
+		}
+	
+		&_8 {
+			grid-column: span 8;
+		}
+	}
+
+	@media screen and (max-width: $breakpoint) {
+		&_m-col {
+			&_2,
+			&_3,
+			&_4,
+			&_5,
+			&_8 {
+				grid-column: span 1;
+			}
+		}
+	}
+}

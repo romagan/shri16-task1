@@ -1,0 +1,12 @@
+.cover {
+	min-height: 472px;
+
+	&__preview {
+		height: 180px;
+		margin-bottom: var(--space-l);
+	}
+
+	.button {
+		height: var(--space-l);
+	}
+}

@@ -1,0 +1,12 @@
+.warning {
+	min-height: 335px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+
+	.placeholder {
+		margin-top: var(--space-m);
+		margin-bottom: var(--space-m);
+	}
+}

@@ -1,0 +1,53 @@
+.form {
+	&_border_all {
+		border: 3px solid var(--bg-color-bordered);
+	}
+
+	&_view_default {
+		background-color: var(--bg-color-default);
+	}
+}
+
+.form__item {
+	&_border_bottom:not(:last-child) {
+		border-bottom: 3px solid var(--bg-color-border);
+	}
+
+	&_distribute_between {
+		justify-content: space-between;
+		display: flex;
+	}
+
+	&_vertical-align_center {
+		align-items: center;
+		display: flex;
+	}
+
+	@each $val in xxxs xxs s m l xl xxl xxxl xxxxl {
+		&_indent-b_#{$val} {
+			margin-bottom: var(--space-#{$val});
+		}
+
+		&_space-h_#{$val} {
+			padding-left: var(--space-#{$val});
+			padding-right: var(--space-#{$val});
+		}
+
+		&_space-v_#{$val} {
+			padding-top: var(--space-#{$val});
+			padding-bottom: var(--space-#{$val});
+		}
+	}
+}
+
+.form__label {
+	&_width_default {
+		width: 35%;
+	}
+}
+
+.form__control {
+	flex: 1;
+	display: flex;
+	flex-direction: row-reverse;
+}
