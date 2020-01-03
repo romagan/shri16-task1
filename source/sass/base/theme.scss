@@ -45,6 +45,12 @@
 			--image-url: url(./img/placeholder-inverse.svg);
 			--image-bg-color: var(--bg-color-default);
 			--image-border-color: var(--bg-color-bordered);
+
+			.onoffswitch {
+				&__button {
+					float: none;
+				}
+			}
 		}
 
 		&_project-warning {

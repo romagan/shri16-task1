@@ -10,7 +10,7 @@
 
 .form__item {
 	&_border_bottom:not(:last-child) {
-		border-bottom: 3px solid var(--bg-color-border);
+		border-bottom: 3px solid var(--bg-color-bordered);
 	}
 
 	&_distribute_between {

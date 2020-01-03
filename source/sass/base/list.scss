@@ -9,6 +9,10 @@
 }
 
 .list__item {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+
 	&_border {
 		&_bottom:not(:last-child) {
 			border-bottom: 3px solid var(--bg-color-bordered);
@@ -21,12 +25,10 @@
 
 	&_distribute_between {
 		justify-content: space-between;
-		display: flex;
 	}
 
 	&_vertical-align_center {
 		align-items: center;
-		display: flex;
 	}
 
 	&_indent-t_m {
